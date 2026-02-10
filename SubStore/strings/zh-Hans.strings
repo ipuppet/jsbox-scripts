@@ -1,0 +1,69 @@
+"SUBSTORE" = "SubStore";
+
+"TIPS" = "贴士";
+"CLOSE" = "关闭";
+
+"UI_SETTING" = "UI 选项";
+"HIDE_SYNC_TAB" = "隐藏同步菜单栏";
+
+"CHOOSE_FILE" = "选择文件";
+"DEFAULT_FILE" = "默认文件";
+"MANUAL_INPUT" = "手动输入";
+"COPY_TO_CLIPBOARD" = "复制到剪贴板";
+"FILE_NOT_FOUND" = "未找到文件";
+"EXPORT" = "导出";
+"IMPORT" = "导入";
+"EXPORT_ERROR" = "导出失败";
+"IMPORT_ERROR" = "导入失败";
+
+"SUBSCRIPTION" = "订阅";
+"SYNC" = "同步";
+"NO_SYNC" = "从未同步";
+"COLLECTION" = "集合";
+"CONTAINS_SUBS" = "包含订阅";
+"EXPIRE" = "过期日期";
+"USAGE" = "用量";
+"LOCAL_SUBSCRIPTION" = "本地订阅";
+
+"DELETE" = "删除";
+"EDIT" = "编辑";
+
+"SAVE" = "保存";
+"SAVE_SUCCESS" = "保存成功";
+"GENERAL" = "通用";
+"NAME" = "名称";
+"DISPLAY_NAME" = "显示名称";
+"ICON" = "图标";
+"SOURCE" = "来源";
+"REMOTE" = "远程";
+"LOCAL" = "本地";
+"CONTENT" = "内容";
+"UA" = "User-Agent";
+"ignoreFailedRemoteSub" = "忽略失败的远程订阅";
+
+"COMMON_SETTINGS" = "通用设置";
+"RETAIN" = "保留";
+"ADD" = "添加";
+"REMOVE" = "移除";
+"DEFAULT" = "默认";
+"ENABLE" = "开启";
+"DISABLE" = "关闭";
+"USELESS_NODES" = "Useless Nodes";
+"UDP_RELAY" = "UDP Relay";
+"SKIP_TLS_VERIFY" = "Skip TLS Verify";
+"TCP_FAST_OPEN" = "TCP Fast Open";
+"VMESS_AEAD" = "Vmess AEAD";
+
+"NODE_ACTIONS" = "节点操作";
+"ADD_ACTION" = "添加操作";
+
+"TYPE" = "类型";
+"PLATFORM" = "平台";
+
+"FlagOperator" = "国旗";
+"work-mode" = "工作模式";
+"ASCENDING" = "升序";
+"DESCENDING" = "降序";
+"RANDOM" = "随机";
+"SortOperator" = "节点排序";
+"TypeFilter" = "节点类型过滤";

@@ -1,0 +1,69 @@
+"SUBSTORE" = "SubStore";
+
+"TIPS" = "Tips";
+"CLOSE" = "Close";
+
+"UI_SETTING" = "UI Setting";
+"HIDE_SYNC_TAB" = "Hide Sync Tab";
+
+"CHOOSE_FILE" = "Choose File";
+"DEFAULT_FILE" = "Default File";
+"MANUAL_INPUT" = "Input";
+"COPY_TO_CLIPBOARD" = "Copy to Clipboard";
+"FILE_NOT_FOUND" = "Fiel Not Found";
+"EXPORT" = "Export";
+"IMPORT" = "Import";
+"EXPORT_ERROR" = "Export Failed";
+"IMPORT_ERROR" = "Import Failed";
+
+"SUBSCRIPTION" = "Subscription";
+"SYNC" = "Sync";
+"NO_SYNC" = "Never Sync";
+"COLLECTION" = "Collection";
+"CONTAINS_SUBS" = "Contains Subs";
+"EXPIRE" = "Expire";
+"USAGE" = "Usage";
+"LOCAL_SUBSCRIPTION" = "Local Subscription";
+
+"DELETE" = "Delete";
+"EDIT" = "Edit";
+
+"SAVE" = "Save";
+"SAVE_SUCCESS" = "Save Success";
+"GENERAL" = "General";
+"NAME" = "Name";
+"DISPLAY_NAME" = "Display Name";
+"ICON" = "Icon";
+"SOURCE" = "Source";
+"REMOTE" = "Remote";
+"LOCAL" = "Local";
+"CONTENT" = "Content";
+"UA" = "User-Agent";
+"ignoreFailedRemoteSub" = "Ignore Failed Subs";
+
+"COMMON_SETTINGS" = "Common Settings";
+"RETAIN" = "Retain";
+"ADD" = "Add";
+"REMOVE" = "Remove";
+"DEFAULT" = "-";
+"ENABLE" = "ON";
+"DISABLE" = "OFF";
+"USELESS_NODES" = "Useless Nodes";
+"UDP_RELAY" = "UDP Relay";
+"SKIP_TLS_VERIFY" = "Skip TLS Verify";
+"TCP_FAST_OPEN" = "TCP Fast Open";
+"VMESS_AEAD" = "Vmess AEAD";
+
+"NODE_ACTIONS" = "Node Actions";
+"ADD_ACTION" = "Add Action";
+
+"TYPE" = "Type";
+"PLATFORM" = "Platform";
+
+"FlagOperator" = "Flags Options";
+"work-mode" = "Work Mode";
+"ASCENDING" = "Ascending";
+"DESCENDING" = "Descending";
+"RANDOM" = "Random";
+"SortOperator" = "Node Sort";
+"TypeFilter" = "Node Type Filter";

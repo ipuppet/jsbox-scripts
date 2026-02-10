@@ -1,0 +1,16 @@
+[
+    {
+        "title": "ABOUT",
+        "items": [
+            {
+                "icon": [
+                    "book.fill",
+                    "#A569BD"
+                ],
+                "title": "README",
+                "type": "script",
+                "value": "this.method.readme"
+            }
+        ]
+    }
+]

@@ -1,0 +1,55 @@
+"LOADING" = "加载中...";
+"ALERT_INFO" = "提示";
+"SUCCESS" = "成功";
+"ERROR" = "发生错误";
+"INVALID_VALUE" = "该值无效";
+"OK" = "好";
+"CANCEL" = "取消";
+"BACK" = "返回";
+"COPY" = "复制";
+"COPY_SUCCESS" = "复制成功";
+"EMPTY_LIST" = "列表为空";
+
+"GET_BOXJS_DATA_ERROR" = "从 BoxJs 获取数据失败";
+"NO_TODAY_CACHE" = "获取数据失败，请打开工具箱中的 Today 卡片，点击刷新按钮";
+"NO_SCRIPT" = "未选择脚本或脚本被删除，请在工具箱中选择脚本";
+
+"BOXJS" = "BoxJs";
+
+"TOOLBOX" = "工具箱";
+"REFRESH" = "刷新";
+"REFRESH_SUCCESS" = "刷新成功";
+"REMOTE_ACCESS" = "远程访问";
+"REMOTE_ACCESS_CLOSED" = "远程访问已关闭";
+"REMOTE_ACCESS_STARTED" = "远程访问已开启";
+"LOG" = "日志";
+"CLEAR_LOG" = "清理日志";
+"CLEAR_LOG_MSG" = "确认要清除所有日志吗？";
+"BACKUP" = "备份";
+"UPLOAD_TO_ICLOUD" = "上传至 iCloud";
+"NOTHING_HAPPENS" = "无事发生";
+"UPLOAD_TO_ICLOUD_ALERT" = "若列表为空则会自动创建一份备份\n会跳过 iCloud 内同名文件";
+"ALSO_DELETE_ICLOUD" = "该操作也会删除 iCloud 文件";
+"ERROR_GET_DATA" = "获取数据时出错";
+"ERROE_BACKUP" = "制作备份时出错";
+"SUCCESS_BACKUP" = "备份成功";
+"REVERT_FROM_ICLOUD" = "从 iCloud 恢复备份";
+"RECOVER_TO_BOXJS" = "恢复至 BoxJs";
+"SUCCESS_RECOVER" = "恢复成功";
+"DELETE" = "删除";
+"TODAY" = "Today 小组件";
+"SELECTED_SCRIPT" = "选中的脚本";
+"NO_SCRIPT_FROM_URL" = "没有从 URL 获取的脚本";
+"UPDATE_ALL_SCRIPT" = "更新所有脚本？";
+"UPDATE" = "更新所有脚本？";
+"URL" = "从 URL 添加";
+"NEW_FILE" = "新建文件";
+"FILE_NAME" = "文件名称";
+"EDIT" = "编辑";
+"APPLY" = "应用";
+"SUCCESS_SAVE" = "保存成功";
+
+"ADVANCED" = "高级";
+"DOMAIN" = "访问入口";
+"TIMEOUT" = "超时时间 (s)";
+"PORT" = "端口";

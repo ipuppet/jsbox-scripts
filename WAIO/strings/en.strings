@@ -1,0 +1,48 @@
+"ALERT_INFO" = "Alert";
+"NONE" = "None";
+"COPY" = "Copy";
+"NAME_ALREADY_EXISTS" = "Name already exists";
+"NEW_WIDGET_NAME" = "New Widget name";
+"CANNOT_COPY_THIS_WIDGET" = "Unable to copy this Widget";
+"COPY_SUCCESS" = "Copy success";
+"FAILED_TO_LOAD_VIEW" = "Faild to load view";
+"VIEW_NOT_PROVIDED" = "The view is not provided";
+
+"HOME" = "Home";
+"MENU" = "Menu";
+"CANNOT_TRACE_TO_THE_SOURCE" = "The widget cannot be traced";
+"PREVIEW" = "Preview";
+
+"CUSTOM" = "Custom";
+"CANNOT_CUSTOM" = "This widget cannot be customized.";
+"SAVE" = "Save";
+"SAVE_SUCCESS" = "Save success";
+"SAVE_ERROR" = "Save failed";
+"DELETE" = "Delete ";
+"CONFIRM_DELETE_MSG" = "Are you sure you want to delete?";
+"DELETE_SUCCESS" = "Delete success";
+"DELETE_ERROR" = "Delete failed";
+
+"UPDATE_HOME_SCREEN_WIDGET_OPTIONS" = "Update Home Screen Widget Options";
+
+"BACKUP" = "Backup";
+"START_BACKUP" = "Start Backup";
+"BACKUP_TO_ICLOUD" = "Backup to iCloud";
+"RECOVER_FROM_ICLOUD" = "Recover from iCloud";
+
+"DISPLAY_MODE" = "Display Mode";
+"COLOR_SETTING" = "Color Setting";
+"DARK_MODE" = "Dark Mode";
+"LIGHT_MODE" = "Light Mode";
+"TEXT_COLOR" = "Text Color";
+"BACKGROUND" = "Background";
+"BACKGROUND_COLOR" = "Background Color";
+"BACKGROUND_IMAGE" = "Background Image";
+"USE_COMPRESSED_IMAGE" = "Use Compressed Image";
+"CHOOSE_IMAGE" = "Select Image";
+"CLEAR_IMAGE" = "Clear Image";
+
+"CLASSIC" = "Classic";
+"MODERN" = "Modern";
+
+"FONT_SIZE" = "Font Size";

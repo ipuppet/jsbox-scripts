@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Join",
+        "value": "Join"
+    },
+    {
+        "name": "Calendar",
+        "value": "Calendar"
+    },
+    {
+        "name": "Schedule",
+        "value": "Schedule"
+    },
+    {
+        "name": "Album",
+        "value": "Album"
+    },
+    {
+        "name": "MyDays",
+        "value": "MyDays"
+    }
+]

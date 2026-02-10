@@ -1,0 +1,103 @@
+[
+    {
+        "title": "GENERAL",
+        "items": [
+            {
+                "icon": ["rectangle.split.3x1.fill", "#FF6666"],
+                "title": "TIME_SPAN",
+                "type": "number",
+                "key": "timeSpan",
+                "value": 10
+            }
+        ]
+    },
+    {
+        "title": "2x2",
+        "items": [
+            {
+                "icon": ["pencil.and.ellipsis.rectangle", "#FF9900"],
+                "title": "ITEM_LENGTH",
+                "type": "stepper",
+                "key": "itemLength2x2",
+                "min": 2,
+                "max": 5,
+                "value": 3
+            },
+            {
+                "icon": ["paperplane.fill"],
+                "title": "CLICK_EVENT",
+                "type": "menu",
+                "pullDown": true,
+                "key": "clickEvent",
+                "items": ["SETTING", "REMINDER", "CALENDAR"],
+                "value": 0
+            },
+            {
+                "icon": ["rectangle.3.offgrid"],
+                "title": "DATA_DISPLAY_MODE",
+                "type": "menu",
+                "pullDown": true,
+                "key": "dataMode2x2",
+                "items": ["CALENDAR", "REMINDER", "MIXED_MODE"],
+                "value": 2
+            }
+        ]
+    },
+    {
+        "title": "2x4",
+        "items": [
+            {
+                "icon": ["pencil.and.ellipsis.rectangle", "#FF9900"],
+                "title": "ITEM_LENGTH",
+                "type": "stepper",
+                "key": "itemLength2x4",
+                "min": 2,
+                "max": 5,
+                "value": 3
+            },
+            {
+                "icon": ["rectangle.3.offgrid"],
+                "title": "DATA_DISPLAY_MODE",
+                "type": "menu",
+                "pullDown": true,
+                "key": "dataMode2x4",
+                "items": ["LEFT_AND_RIGHT", "MIXED_MODE"],
+                "value": 0
+            }
+        ]
+    },
+    {
+        "title": "4x4",
+        "items": [
+            {
+                "icon": ["pencil.and.ellipsis.rectangle", "#FF9900"],
+                "title": "ITEM_LENGTH",
+                "type": "stepper",
+                "key": "itemLength4x4",
+                "min": 2,
+                "max": 10,
+                "value": 6
+            },
+            {
+                "icon": ["rectangle.3.offgrid"],
+                "title": "DATA_DISPLAY_MODE",
+                "type": "menu",
+                "pullDown": true,
+                "key": "dataMode4x4",
+                "items": ["LEFT_AND_RIGHT", "MIXED_MODE"],
+                "value": 0
+            }
+        ]
+    },
+    {
+        "title": "ABOUT",
+        "items": [
+            {
+                "icon": ["book.fill", "#A569BD"],
+                "title": "README",
+                "type": "script",
+                "value": "this.method.readme"
+            }
+        ]
+    }
+]

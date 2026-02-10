@@ -1,0 +1,55 @@
+"LOADING" = "Loading...";
+"ALERT_INFO" = "Info";
+"SUCCESS" = "Success";
+"ERROR" = "Error";
+"INVALID_VALUE" = "Invalid value";
+"OK" = "OK";
+"CANCEL" = "Cancel";
+"BACK" = "Back";
+"COPY" = "Copy";
+"COPY_SUCCESS" = "Copy successfully";
+"EMPTY_LIST" = "List is empty";
+
+"GET_BOXJS_DATA_ERROR" = "Failed to get data from BoxJs";
+"NO_TODAY_CACHE" = "Failed to obtain data, please open the Today card in the toolbox and click the refresh button";
+"NO_SCRIPT" = "No script is selected or the script is deleted, please select the script in the toolbox";
+
+"BOXJS" = "BoxJs";
+
+"TOOLBOX" = "Toolbox";
+"REFRESH" = "Refresh";
+"REFRESH_SUCCESS" = "Refresh successfully";
+"REMOTE_ACCESS" = "Remote Access";
+"REMOTE_ACCESS_CLOSED" = "Remote access is off";
+"REMOTE_ACCESS_STARTED" = "Remote access is on";
+"LOG" = "Log";
+"CLEAR_LOG" = "Clean up the log";
+"CLEAR_LOG_MSG" = "Are you sure you want to clear all logs?";
+"BACKUP" = "Backup";
+"UPLOAD_TO_ICLOUD" = "Upload to iCloud";
+"NOTHING_HAPPENS" = "Nothing happens";
+"UPLOAD_TO_ICLOUD_ALERT" = "If the list is empty, a backup will be created automatically.\nFiles with the same name in iCloud will be skipped.";
+"ALSO_DELETE_ICLOUD" = "This operation will also delete iCloud file.";
+"ERROR_GET_DATA" = "Error while fetching data";
+"ERROE_BACKUP" = "An error occurred while making the backup";
+"SUCCESS_BACKUP" = "Backup successfully";
+"REVERT_FROM_ICLOUD" = "Recover from iCloud";
+"RECOVER_TO_BOXJS" = "Recover to BoxJs";
+"SUCCESS_RECOVER" = "Recover successfully";
+"DELETE" = "Delete";
+"TODAY" = "Today Widget";
+"SELECTED_SCRIPT" = "Selected script";
+"NO_SCRIPT_FROM_URL" = "No script";
+"UPDATE_ALL_SCRIPT" = "Update all scripts?";
+"UPDATE" = "Update all?";
+"URL" = "From URL";
+"NEW_FILE" = "New flie";
+"FILE_NAME" = "File name";
+"EDIT" = "Edit";
+"APPLY" = "Apply";
+"SUCCESS_SAVE" = "Saved";
+
+"ADVANCED" = "Advanced";
+"DOMAIN" = "Access Domain";
+"TIMEOUT" = "Timeout (s)";
+"PORT" = "Port";

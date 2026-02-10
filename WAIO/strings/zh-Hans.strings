@@ -1,0 +1,48 @@
+"ALERT_INFO" = "提示";
+"NONE" = "无";
+"COPY" = "复制";
+"NAME_ALREADY_EXISTS" = "名称已存在";
+"NEW_WIDGET_NAME" = "新Widget名";
+"CANNOT_COPY_THIS_WIDGET" = "无法复制该widget";
+"COPY_SUCCESS" = "复制成功";
+"FAILED_TO_LOAD_VIEW" = "加载视图失败";
+"VIEW_NOT_PROVIDED" = "未提供该视图";
+
+"HOME" = "首页";
+"MENU" = "菜单";
+"CANNOT_TRACE_TO_THE_SOURCE" = "无法溯源该widget";
+"PREVIEW" = "预览";
+
+"CUSTOM" = "定制";
+"CANNOT_CUSTOM" = "该组件无法定制";
+"SAVE" = "保存";
+"SAVE_SUCCESS" = "保存成功";
+"SAVE_ERROR" = "保存失败";
+"DELETE" = "删除 ";
+"CONFIRM_DELETE_MSG" = "确认要删除吗？";
+"DELETE_SUCCESS" = "删除成功";
+"DELETE_ERROR" = "删除失败";
+
+"UPDATE_HOME_SCREEN_WIDGET_OPTIONS" = "更新主屏幕widget参数";
+
+"BACKUP" = "备份";
+"START_BACKUP" = "开始备份";
+"BACKUP_TO_ICLOUD" = "备份到iCloud";
+"RECOVER_FROM_ICLOUD" = "从iCloud恢复";
+
+"DISPLAY_MODE" = "显示模式";
+"COLOR_SETTING" = "颜色设置";
+"DARK_MODE" = "深色模式";
+"LIGHT_MODE" = "浅色模式";
+"TEXT_COLOR" = "文本颜色";
+"BACKGROUND" = "背景";
+"BACKGROUND_COLOR" = "背景色";
+"BACKGROUND_IMAGE" = "背景图片";
+"USE_COMPRESSED_IMAGE" = "使用压缩后的图片";
+"CHOOSE_IMAGE" = "选择图片";
+"CLEAR_IMAGE" = "清除图片";
+
+"CLASSIC" = "经典";
+"MODERN" = "现代";
+
+"FONT_SIZE" = "字体大小";

@@ -1,0 +1,30 @@
+"MONTH" = "-";
+
+"SUNDAY" = "SUNDAY";
+"MONDAY" = "MONDAY";
+"TUESDAY" = "TUESDAY";
+"WEDNESDAY" = "WEDNESDAY";
+"THURSDAY" = "THURSDAY";
+"FRIDAY" = "FRIDAY";
+"SATURDAY" = "SATURDAY";
+
+"TIME_SPAN" = "Time Span (Day)";
+"DATE" = " ";
+"NO_DATE" = "No Date";
+"TODAY" = "Today";
+"TOMORROW" = "Tomorrow";
+"YESTERDAY" = "Yesterday";
+"ALL_DAY" = "All Day";
+"DATE_COLOR" = "Date Color";
+"CALENDAR_COLOR" = "Calendar Color";
+"REMINDER_COLOR" = "Reminder Color";
+"NO_CALENDAR" = "No Events";
+"NO_REMINDER" = "No Reminder";
+"NO_CALENDAR&REMINDER" = "No Events";
+"ITEM_LENGTH" = "Items to Display";
+"CLICK_EVENT" = "Click Event";
+"REMINDER" = "Reminder";
+"CALENDAR" = "Calendar";
+"DATA_DISPLAY_MODE" = "Data Display Mode";
+"LEFT_AND_RIGHT" = "Left and Right";
+"MIXED_MODE" = "Mixed Mode";
