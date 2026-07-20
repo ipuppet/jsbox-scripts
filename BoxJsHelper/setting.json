@@ -56,7 +56,7 @@
                 "icon": ["icon_177", "black"],
                 "title": "Github",
                 "type": "info",
-                "value": ["ipuppet/BoxJsHelper", "https://github.com/ipuppet/BoxJsHelper"]
+                "value": ["ipuppet/jsbox-scripts", "https://github.com/ipuppet/jsbox-scripts"]
             },
             {
                 "icon": ["icon_172", "#1888bf"],
@@ -68,7 +68,7 @@
                 "icon": ["person.fill", "#FF9900"],
                 "title": "AUTHOR",
                 "type": "info",
-                "value": ["ipuppet", "https://blog.ultagic.com"]
+                "value": ["ipuppet", "https://blog.samuelwei.dev"]
             },
             {
                 "icon": ["book.fill", "#A569BD"],

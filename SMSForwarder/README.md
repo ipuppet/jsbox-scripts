@@ -70,7 +70,10 @@
 
 ## Author
 
-ipuppet — [GitHub](https://github.com/ipuppet)
+ipuppet
+
+- [GitHub](https://github.com/ipuppet)
+- [Blog](https://blog.samuelwei.dev)
 
 ## License
 

@@ -58,14 +58,14 @@
                 "title": "Github",
                 "type": "info",
                 "key": "github",
-                "value": ["ipuppet/WOL", "https://github.com/ipuppet/WOL"]
+                "value": ["ipuppet/jsbox-scripts", "https://github.com/ipuppet/jsbox-scripts"]
             },
             {
                 "icon": ["person.fill", "#FF9900"],
                 "title": "AUTHOR",
                 "type": "info",
                 "key": "author",
-                "value": ["ipuppet", "https://blog.ipuppet.top"]
+                "value": ["ipuppet", "https://blog.samuelwei.dev"]
             },
             {
                 "icon": ["book.fill", "#A569BD"],

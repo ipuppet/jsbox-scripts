@@ -12,7 +12,7 @@ const aboutSection = {
     new SettingInfo({
       icon: ["person.fill", "#FF9900"],
       title: "AUTHOR",
-      value: ["ipuppet", "https://github.com/ipuppet"]
+      value: ["ipuppet", "https://blog.samuelwei.dev"]
     }),
     new SettingScript({
       icon: ["book.fill", "#A569BD"],

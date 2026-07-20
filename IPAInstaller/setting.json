@@ -82,8 +82,8 @@
                 "title": "Github",
                 "type": "info",
                 "value": [
-                    "ipuppet/IPAInstaller",
-                    "https://github.com/ipuppet/IPAInstaller"
+                    "ipuppet/jsbox-scripts",
+                    "https://github.com/ipuppet/jsbox-scripts"
                 ]
             },
             {
@@ -95,7 +95,7 @@
                 "type": "info",
                 "value": [
                     "ipuppet",
-                    "https://blog.ultagic.com"
+                    "https://blog.samuelwei.dev"
                 ]
             },
             {

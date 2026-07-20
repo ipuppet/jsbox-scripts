@@ -44,7 +44,7 @@
                 "icon": ["icon_177", "black"],
                 "title": "Github",
                 "type": "info",
-                "value": ["EasyJsBox", "https://github.com/ipuppet/EasyJsBox"]
+                "value": ["ipuppet/jsbox-scripts", "https://github.com/ipuppet/jsbox-scripts"]
             },
             {
                 "icon": ["icon_172", "#1888bf"],
@@ -57,7 +57,7 @@
                 "title": "AUTHOR",
                 "type": "info",
                 "key": "author",
-                "value": ["ipuppet", "https://blog.ultagic.com"]
+                "value": ["ipuppet", "https://blog.samuelwei.dev"]
             },
             {
                 "icon": ["book.fill", "#A569BD"],
