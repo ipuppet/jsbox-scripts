@@ -13,11 +13,18 @@ function openFeature(kernel, feature) {
     return
   }
 
-  UIKit.push({
+  const page = builder(kernel)
+  const options = {
     title: $l10n(target.titleKey),
     bgcolor: $color("insetGroupedBackground"),
-    views: [builder(kernel)]
-  })
+    views: [page]
+  }
+
+  if (page.__navButtons) {
+    options.navButtons = page.__navButtons
+  }
+
+  UIKit.push(options)
 }
 
 module.exports = {

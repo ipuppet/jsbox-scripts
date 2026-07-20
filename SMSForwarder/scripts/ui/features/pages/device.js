@@ -12,14 +12,19 @@ const { createPageContext } = require("./_context")
 function buildBatteryPage(kernel) {
   const { client, resultId, run } = createPageContext(kernel, "batteryResult")
 
+  const doQuery = () => run(async () => formatBattery(await client.queryBattery()))
+
   return createPage({
     views: [
-      createPrimaryButton({
-        title: $l10n("QUERY"),
-        handler: () => run(async () => formatBattery(await client.queryBattery()))
-      }),
       createResultView(resultId)
-    ]
+    ],
+    navButtons: [
+      {
+        symbol: "arrow.clockwise",
+        handler: doQuery
+      }
+    ],
+    onReady: doQuery
   })
 }
 
@@ -39,7 +44,6 @@ function buildWolPage(kernel) {
       ]),
       createPrimaryButton({
         title: $l10n("SEND"),
-        bgcolor: "systemRed",
         handler: () =>
           run(() => {
             const mac = getFieldText("mac")
@@ -63,14 +67,19 @@ function buildWolPage(kernel) {
 function buildLocationPage(kernel) {
   const { client, resultId, run } = createPageContext(kernel, "locationResult")
 
+  const doQuery = () => run(async () => formatLocation(await client.queryLocation()))
+
   return createPage({
     views: [
-      createPrimaryButton({
-        title: $l10n("QUERY"),
-        handler: () => run(async () => formatLocation(await client.queryLocation()))
-      }),
       createResultView(resultId)
-    ]
+    ],
+    navButtons: [
+      {
+        symbol: "arrow.clockwise",
+        handler: doQuery
+      }
+    ],
+    onReady: doQuery
   })
 }
 

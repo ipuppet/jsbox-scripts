@@ -20,7 +20,7 @@ function measureResultHeight(text) {
   return Math.max(ROW_HEIGHT, size.height + 32)
 }
 
-function createPage({ views, onReady }) {
+function createPage({ views, onReady, navButtons }) {
   const sections = []
 
   views.forEach(item => {
@@ -54,6 +54,10 @@ function createPage({ views, onReady }) {
 
   if (onReady) {
     page.events.ready = onReady
+  }
+
+  if (navButtons) {
+    page.__navButtons = navButtons
   }
 
   return page
@@ -157,7 +161,7 @@ function createTab({ id, items, values, index = 0 }) {
   }
 }
 
-function createPrimaryButton({ title, bgcolor = "systemBlue", handler }) {
+function createPrimaryButton({ title, bgcolor = "tint", handler }) {
   return {
     __pageBlock: "section",
     rows: [

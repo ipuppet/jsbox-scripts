@@ -16,6 +16,17 @@ const CALL_TYPE_VALUES = [0, 1, 2, 3]
 function buildCallQueryPage(kernel) {
   const { client, resultId, run } = createPageContext(kernel, "callQueryResult")
 
+  const doQuery = () =>
+    run(async () => {
+      const data = await client.queryCall({
+        type: getTabValue("callType", CALL_TYPE_VALUES),
+        page_num: parseInt(getFieldText("callPageNum"), 10) || 1,
+        page_size: parseInt(getFieldText("callPageSize"), 10) || 10,
+        phone_number: getFieldText("phoneNumber")
+      })
+      return formatCallList(data)
+    })
+
   return createPage({
     views: [
       createCard([
@@ -43,21 +54,15 @@ function buildCallQueryPage(kernel) {
           defaultValue: "10"
         })
       ]),
-      createPrimaryButton({
-        title: $l10n("QUERY"),
-        handler: () =>
-          run(async () => {
-            const data = await client.queryCall({
-              type: getTabValue("callType", CALL_TYPE_VALUES),
-              page_num: parseInt(getFieldText("callPageNum"), 10) || 1,
-              page_size: parseInt(getFieldText("callPageSize"), 10) || 10,
-              phone_number: getFieldText("phoneNumber")
-            })
-            return formatCallList(data)
-          })
-      }),
       createResultView(resultId)
-    ]
+    ],
+    navButtons: [
+      {
+        symbol: "arrow.clockwise",
+        handler: doQuery
+      }
+    ],
+    onReady: doQuery
   })
 }
 

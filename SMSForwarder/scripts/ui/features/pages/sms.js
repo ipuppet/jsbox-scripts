@@ -34,7 +34,6 @@ function buildSmsSendPage(kernel) {
       ]),
       createPrimaryButton({
         title: $l10n("SEND"),
-        bgcolor: "systemGreen",
         handler: () =>
           run(() =>
             client.sendSms({
@@ -51,6 +50,17 @@ function buildSmsSendPage(kernel) {
 
 function buildSmsQueryPage(kernel) {
   const { client, resultId, run } = createPageContext(kernel, "smsQueryResult")
+
+  const doQuery = () =>
+    run(async () => {
+      const data = await client.querySms({
+        type: getTabValue("smsType", SMS_TYPE_VALUES),
+        page_num: parseInt(getFieldText("pageNum"), 10) || 1,
+        page_size: parseInt(getFieldText("pageSize"), 10) || 10,
+        keyword: getFieldText("keyword")
+      })
+      return formatSmsList(data)
+    })
 
   return createPage({
     views: [
@@ -75,21 +85,15 @@ function buildSmsQueryPage(kernel) {
           defaultValue: "10"
         })
       ]),
-      createPrimaryButton({
-        title: $l10n("QUERY"),
-        handler: () =>
-          run(async () => {
-            const data = await client.querySms({
-              type: getTabValue("smsType", SMS_TYPE_VALUES),
-              page_num: parseInt(getFieldText("pageNum"), 10) || 1,
-              page_size: parseInt(getFieldText("pageSize"), 10) || 10,
-              keyword: getFieldText("keyword")
-            })
-            return formatSmsList(data)
-          })
-      }),
       createResultView(resultId)
-    ]
+    ],
+    navButtons: [
+      {
+        symbol: "arrow.clockwise",
+        handler: doQuery
+      }
+    ],
+    onReady: doQuery
   })
 }
 

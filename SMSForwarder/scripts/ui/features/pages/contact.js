@@ -12,6 +12,15 @@ const { createPageContext } = require("./_context")
 function buildContactQueryPage(kernel) {
   const { client, resultId, run } = createPageContext(kernel, "contactQueryResult")
 
+  const doQuery = () =>
+    run(async () => {
+      const data = await client.queryContact({
+        phone_number: getFieldText("contactPhone"),
+        name: getFieldText("contactName")
+      })
+      return formatContactList(data)
+    })
+
   return createPage({
     views: [
       createCard([
@@ -22,19 +31,15 @@ function buildContactQueryPage(kernel) {
         }),
         createField({ id: "contactName", placeholder: $l10n("NAME_OPTIONAL") })
       ]),
-      createPrimaryButton({
-        title: $l10n("QUERY"),
-        handler: () =>
-          run(async () => {
-            const data = await client.queryContact({
-              phone_number: getFieldText("contactPhone"),
-              name: getFieldText("contactName")
-            })
-            return formatContactList(data)
-          })
-      }),
       createResultView(resultId)
-    ]
+    ],
+    navButtons: [
+      {
+        symbol: "arrow.clockwise",
+        handler: doQuery
+      }
+    ],
+    onReady: doQuery
   })
 }
 
