@@ -1,16 +1,17 @@
 {
-    "info": {
-        "name": "WOL",
-        "version": "1.0.8",
-        "author": "ipuppet",
-        "module": false
-    },
-    "settings": {
-        "theme": "auto",
-        "minSDKVer": "2.19.0",
-        "minOSVer": "13.0.0",
-        "idleTimerDisabled": false,
-        "keyboardToolbarEnabled": true,
-        "rotateDisabled": false
-    }
+  "info": {
+    "name": "WOL",
+    "version": "1.0.8",
+    "author": "ipuppet",
+    "website": "https://blog.samuelwei.dev",
+    "module": false
+  },
+  "settings": {
+    "theme": "auto",
+    "minSDKVer": "2.19.0",
+    "minOSVer": "13.0.0",
+    "idleTimerDisabled": false,
+    "keyboardToolbarEnabled": true,
+    "rotateDisabled": false
+  }
 }

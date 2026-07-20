@@ -31,7 +31,11 @@ function buildWolPage(kernel) {
       createCard([
         createField({ id: "mac", placeholder: $l10n("MAC_ADDRESS") }),
         createField({ id: "ip", placeholder: $l10n("IP_OPTIONAL") }),
-        createField({ id: "port", placeholder: $l10n("PORT_OPTIONAL"), kbType: $kbType.number })
+        createField({
+          id: "port",
+          placeholder: $l10n("PORT_OPTIONAL"),
+          kbType: $kbType.number
+        })
       ]),
       createPrimaryButton({
         title: $l10n("SEND"),

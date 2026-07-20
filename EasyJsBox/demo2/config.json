@@ -1,18 +1,18 @@
 {
-    "info": {
-        "name": "{{APP_NAME}}",
-        "version": "{{APP_VERSION}}",
-        "author": "{{AUTHOR}}",
-        "url": "{{GITHUB_URL}}",
-        "website": "{{WEBSITE}}",
-        "module": false
-    },
-    "settings": {
-        "theme": "auto",
-        "minSDKVer": "2.19.0",
-        "minOSVer": "14.0.0",
-        "idleTimerDisabled": false,
-        "keyboardToolbarEnabled": true,
-        "rotateDisabled": false
-    }
+  "info": {
+    "name": "{{APP_NAME}}",
+    "version": "{{APP_VERSION}}",
+    "author": "{{AUTHOR}}",
+    "url": "{{GITHUB_URL}}",
+    "website": "{{WEBSITE}}",
+    "module": false
+  },
+  "settings": {
+    "theme": "auto",
+    "minSDKVer": "2.19.0",
+    "minOSVer": "14.0.0",
+    "idleTimerDisabled": false,
+    "keyboardToolbarEnabled": true,
+    "rotateDisabled": false
+  }
 }

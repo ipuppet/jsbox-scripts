@@ -1,81 +1,81 @@
 [
-    {
-        "title": "BoxJs",
-        "items": [
-            {
-                "icon": ["tag.fill", "#9B59B6"],
-                "title": "TIPS",
-                "type": "script",
-                "key": "boxjs.tips",
-                "value": "this.method.tips"
-            },
-            {
-                "icon": ["location.fill", "#FF9900"],
-                "title": "DOMAIN",
-                "type": "input",
-                "key": "advanced.domain",
-                "value": "boxjs.net"
-            },
-            {
-                "icon": ["wifi.slash"],
-                "title": "TIMEOUT",
-                "type": "number",
-                "key": "advanced.timeout",
-                "value": 3
-            }
-        ]
-    },
-    {
-        "title": "REMOTE_ACCESS",
-        "items": [
-            {
-                "icon": ["dot.radiowaves.right", "#3498DB"],
-                "title": "PORT",
-                "type": "number",
-                "key": "advanced.serverPort",
-                "value": 6060
-            },
-            {
-                "key": "server.remoteAccess",
-                "value": false
-            },
-            {
-                "key": "server.logRequest",
-                "value": false
-            },
-            {
-                "key": "today.script",
-                "value": ""
-            }
-        ]
-    },
-    {
-        "title": "ABOUT",
-        "items": [
-            {
-                "icon": ["icon_177", "black"],
-                "title": "Github",
-                "type": "info",
-                "value": ["ipuppet/jsbox-scripts", "https://github.com/ipuppet/jsbox-scripts"]
-            },
-            {
-                "icon": ["icon_172", "#1888bf"],
-                "title": "Telegram",
-                "type": "info",
-                "value": ["JSBoxTG", "https://t.me/JSBoxTG"]
-            },
-            {
-                "icon": ["person.fill", "#FF9900"],
-                "title": "AUTHOR",
-                "type": "info",
-                "value": ["ipuppet", "https://blog.samuelwei.dev"]
-            },
-            {
-                "icon": ["book.fill", "#A569BD"],
-                "title": "README",
-                "type": "script",
-                "value": "this.method.readme"
-            }
-        ]
-    }
+  {
+    "title": "BoxJs",
+    "items": [
+      {
+        "icon": ["tag.fill", "#9B59B6"],
+        "title": "TIPS",
+        "type": "script",
+        "key": "boxjs.tips",
+        "value": "this.method.tips"
+      },
+      {
+        "icon": ["location.fill", "#FF9900"],
+        "title": "DOMAIN",
+        "type": "input",
+        "key": "advanced.domain",
+        "value": "boxjs.net"
+      },
+      {
+        "icon": ["wifi.slash"],
+        "title": "TIMEOUT",
+        "type": "number",
+        "key": "advanced.timeout",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "title": "REMOTE_ACCESS",
+    "items": [
+      {
+        "icon": ["dot.radiowaves.right", "#3498DB"],
+        "title": "PORT",
+        "type": "number",
+        "key": "advanced.serverPort",
+        "value": 6060
+      },
+      {
+        "key": "server.remoteAccess",
+        "value": false
+      },
+      {
+        "key": "server.logRequest",
+        "value": false
+      },
+      {
+        "key": "today.script",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "title": "ABOUT",
+    "items": [
+      {
+        "icon": ["icon_177", "black"],
+        "title": "Github",
+        "type": "info",
+        "value": ["ipuppet/jsbox-scripts", "https://github.com/ipuppet/jsbox-scripts"]
+      },
+      {
+        "icon": ["icon_172", "#1888bf"],
+        "title": "Telegram",
+        "type": "info",
+        "value": ["JSBoxTG", "https://t.me/JSBoxTG"]
+      },
+      {
+        "icon": ["person.fill", "#FF9900"],
+        "title": "AUTHOR",
+        "type": "info",
+        "value": ["ipuppet", "https://blog.samuelwei.dev"]
+      },
+      {
+        "icon": ["book.fill", "#A569BD"],
+        "title": "README",
+        "type": "script",
+        "value": "this.method.readme"
+      }
+    ]
+  }
 ]

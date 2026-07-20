@@ -1,10 +1,10 @@
 {
-    "license": "MIT",
-    "scripts": {
-        "build": "node build.js",
-        "create": "node create-project.js"
-    },
-    "dependencies": {
-        "esbuild": "0.18.17"
-    }
+  "license": "MIT",
+  "scripts": {
+    "build": "node build.js",
+    "create": "node create-project.js"
+  },
+  "dependencies": {
+    "esbuild": "0.18.17"
+  }
 }

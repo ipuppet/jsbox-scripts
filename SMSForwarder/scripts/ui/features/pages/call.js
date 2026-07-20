@@ -25,9 +25,23 @@ function buildCallQueryPage(kernel) {
           values: CALL_TYPE_VALUES,
           index: 0
         }),
-        createField({ id: "phoneNumber", placeholder: $l10n("PHONE_NUMBER_OPTIONAL"), kbType: $kbType.phone }),
-        createField({ id: "callPageNum", placeholder: $l10n("PAGE_NUM"), kbType: $kbType.number, defaultValue: "1" }),
-        createField({ id: "callPageSize", placeholder: $l10n("PAGE_SIZE"), kbType: $kbType.number, defaultValue: "10" })
+        createField({
+          id: "phoneNumber",
+          placeholder: $l10n("PHONE_NUMBER_OPTIONAL"),
+          kbType: $kbType.phone
+        }),
+        createField({
+          id: "callPageNum",
+          placeholder: $l10n("PAGE_NUM"),
+          kbType: $kbType.number,
+          defaultValue: "1"
+        }),
+        createField({
+          id: "callPageSize",
+          placeholder: $l10n("PAGE_SIZE"),
+          kbType: $kbType.number,
+          defaultValue: "10"
+        })
       ]),
       createPrimaryButton({
         title: $l10n("QUERY"),

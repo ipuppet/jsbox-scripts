@@ -20,8 +20,16 @@ function buildSmsSendPage(kernel) {
   return createPage({
     views: [
       createCard([
-        createTab({ id: "simSlot", items: ["SIM1", "SIM2"], values: SIM_VALUES, index: 1 }),
-        createField({ id: "phoneNumbers", placeholder: $l10n("PHONE_NUMBERS_HINT") }),
+        createTab({
+          id: "simSlot",
+          items: ["SIM1", "SIM2"],
+          values: SIM_VALUES,
+          index: 1
+        }),
+        createField({
+          id: "phoneNumbers",
+          placeholder: $l10n("PHONE_NUMBERS_HINT")
+        }),
         createField({ id: "msgContent", placeholder: $l10n("MSG_CONTENT") })
       ]),
       createPrimaryButton({
@@ -54,8 +62,18 @@ function buildSmsQueryPage(kernel) {
           index: 1
         }),
         createField({ id: "keyword", placeholder: $l10n("KEYWORD_OPTIONAL") }),
-        createField({ id: "pageNum", placeholder: $l10n("PAGE_NUM"), kbType: $kbType.number, defaultValue: "1" }),
-        createField({ id: "pageSize", placeholder: $l10n("PAGE_SIZE"), kbType: $kbType.number, defaultValue: "10" })
+        createField({
+          id: "pageNum",
+          placeholder: $l10n("PAGE_NUM"),
+          kbType: $kbType.number,
+          defaultValue: "1"
+        }),
+        createField({
+          id: "pageSize",
+          placeholder: $l10n("PAGE_SIZE"),
+          kbType: $kbType.number,
+          defaultValue: "10"
+        })
       ]),
       createPrimaryButton({
         title: $l10n("QUERY"),

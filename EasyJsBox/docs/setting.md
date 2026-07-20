@@ -10,9 +10,10 @@
 
 - `constructor(args = {})`
 
-    初始化， args 对象中参数均有 `setXxx(value): this` 实现，如 `setSavePath(path)` 返回值为对象自身，因此可以链式调用。
+  初始化， args 对象中参数均有 `setXxx(value): this` 实现，如
+  `setSavePath(path)` 返回值为对象自身，因此可以链式调用。
 
-    **Args**
+  **Args**
 
   - `set`
 
@@ -50,33 +51,36 @@
 
 - `get(key, _default = null)`
 
-    根据 `key` 获取值。若未找到将返回 `_default`。
+  根据 `key` 获取值。若未找到将返回 `_default`。
 
 - `set(key, value)`
 
-    不建议使用该方法，所有数据更新推荐仅在生成的 UI 中完成。
+  不建议使用该方法，所有数据更新推荐仅在生成的 UI 中完成。
 
-    设置键值对，该方法会将数据保存到文件，同时更新内存中的数据，这意味着设置即时生效，可随时调用 `get()` 获取数据。
+  设置键值对，该方法会将数据保存到文件，同时更新内存中的数据，这意味着设置即时生效，可随时调用
+  `get()` 获取数据。
 
 - `useJsboxNav()`
 
-    调用后将修改 child 类型弹出方式为 JsBox 默认样式。
+  调用后将修改 child 类型弹出方式为 JsBox 默认样式。
 
 - `setReadonly()`
 
-    设置为只读模式，尝试写入数据将抛出 `SettingReadonlyError` 错误。
+  设置为只读模式，尝试写入数据将抛出 `SettingReadonlyError` 错误。
 
 - `setFooter(footer)`
 
-    用来设置页脚视图，若不调用，将提供默认样式，显示作者和版本号（作者和版本号将从根目录的 `config.js` 获取）。
+  用来设置页脚视图，若不调用，将提供默认样式，显示作者和版本号（作者和版本号将从根目录的
+  `config.js` 获取）。
 
 ### Events
 
-> 通过父类中的方法 `setEvent(event, callback)` 进行设置，详见 [Controller](./controller.md)
+> 通过父类中的方法 `setEvent(event, callback)` 进行设置，详见
+> [Controller](./controller.md)
 
 - `onSet(key, value)`
 
-    当更新键值对时触发。
+  当更新键值对时触发。
 
 ### Structure
 
@@ -86,14 +90,11 @@
 
 ```json
 {
-    "icon": [
-        "archivebox",
-        "#336699"
-    ],
-    "title": "USE_COMPRESSED_IMAGE",
-    "type": "switch",
-    "key": "album.useCompressedImage",
-    "value": true
+  "icon": ["archivebox", "#336699"],
+  "title": "USE_COMPRESSED_IMAGE",
+  "type": "switch",
+  "key": "album.useCompressedImage",
+  "value": true
 }
 ```
 
@@ -101,16 +102,13 @@
 
 ```json
 {
-    "icon": [
-        "rectangle.split.3x1.fill",
-        "#FF6666"
-    ],
-    "title": "SWITCH_INTERVAL",
-    "type": "stepper",
-    "key": "album.switchInterval",
-    "min": 10,
-    "max": 60,
-    "value": 10
+  "icon": ["rectangle.split.3x1.fill", "#FF6666"],
+  "title": "SWITCH_INTERVAL",
+  "type": "stepper",
+  "key": "album.switchInterval",
+  "min": 10,
+  "max": 60,
+  "value": 10
 }
 ```
 
@@ -118,14 +116,11 @@
 
 ```json
 {
-    "icon": [
-        "link",
-        "#CC6699"
-    ],
-    "title": "URL_SCHEME",
-    "type": "string",
-    "key": "album.urlScheme",
-    "value": ""
+  "icon": ["link", "#CC6699"],
+  "title": "URL_SCHEME",
+  "type": "string",
+  "key": "album.urlScheme",
+  "value": ""
 }
 ```
 
@@ -133,14 +128,11 @@
 
 ```json
 {
-    "icon": [
-        "rectangle.split.3x1.fill",
-        "#FF6666"
-    ],
-    "title": "TIME_SPAN",
-    "type": "number",
-    "key": "timeSpan",
-    "value": 10
+  "icon": ["rectangle.split.3x1.fill", "#FF6666"],
+  "title": "TIME_SPAN",
+  "type": "number",
+  "key": "timeSpan",
+  "value": 10
 }
 ```
 
@@ -148,27 +140,25 @@
 
 ```json
 {
-    "icon": [
-        "book.fill",
-        "#A569BD"
-    ],
-    "title": "Info",
-    "type": "info",
-    "value": "Text message."
+  "icon": ["book.fill", "#A569BD"],
+  "title": "Info",
+  "type": "info",
+  "value": "Text message."
 }
 ```
 
 #### script
 
-如果 `value` 以 `this.method` 开头且结尾无括号，则会自动向该函数传递一个 `animate` 对象。
+如果 `value` 以 `this.method` 开头且结尾无括号，则会自动向该函数传递一个
+`animate` 对象。
 
 `this` 为 `Setting` 实例，需要向 `setting.method` 写入方法，如：
 
 ```js
 setting.method.readme = async animate => {
-    console.log("Hello")
-    await $wait(1)
-    console.log("World")
+  console.log("Hello")
+  await $wait(1)
+  console.log("World")
 }
 ```
 
@@ -178,21 +168,18 @@ setting.method.readme = async animate => {
 
 ```js
 const animate = {
-    start: callable(), // 会出现加载动画
-    cancel: callable(), // 会直接恢复箭头图标
-    done: callable() // 会出现对号，然后恢复箭头
+  start: callable(), // 会出现加载动画
+  cancel: callable(), // 会直接恢复箭头图标
+  done: callable() // 会出现对号，然后恢复箭头
 }
 ```
 
 ```json
 {
-    "icon": [
-        "book.fill",
-        "#A569BD"
-    ],
-    "title": "README",
-    "type": "script",
-    "value": "this.method.readme"
+  "icon": ["book.fill", "#A569BD"],
+  "title": "README",
+  "type": "script",
+  "value": "this.method.readme"
 }
 ```
 
@@ -200,13 +187,10 @@ const animate = {
 
 ```json
 {
-    "icon": [
-        "book.fill",
-        "#A569BD"
-    ],
-    "title": "README_ASYNC",
-    "type": "script",
-    "value": "const content=await getReadme();show(content)"
+  "icon": ["book.fill", "#A569BD"],
+  "title": "README_ASYNC",
+  "type": "script",
+  "value": "const content=await getReadme();show(content)"
 }
 ```
 
@@ -214,7 +198,8 @@ const animate = {
 
 `items` 若为字符串，将尝试将其作为函数执行并使用其返回值。
 
-支持 `script` 类型的 `this.method`，其他形式则应为函数，如 `() => [ "Hello World" ]`
+支持 `script` 类型的 `this.method`，其他形式则应为函数，如
+`() => [ "Hello World" ]`
 
 可选参数 `values`, 与 `items` 一一对应的数组，同样可传入字符串代码动态执行。
 
@@ -222,26 +207,18 @@ const animate = {
 
 ```json
 {
-    "icon": [
-        "flag.fill",
-        "#FFCC00"
-    ],
-    "title": "FIRST_DAY_OF_WEEK",
-    "type": "tab",
-    "key": "calendar.firstDayOfWeek",
-    "items": [
-        "_SUNDAY",
-        "_MONDAY"
-    ],
-    "values": [
-        "sunday",
-        "monday"
-    ],
-    "value": "sunday"
+  "icon": ["flag.fill", "#FFCC00"],
+  "title": "FIRST_DAY_OF_WEEK",
+  "type": "tab",
+  "key": "calendar.firstDayOfWeek",
+  "items": ["_SUNDAY", "_MONDAY"],
+  "values": ["sunday", "monday"],
+  "value": "sunday"
 }
 ```
 
-以上示例中，`get` 函数在选中 `"_SUNDAY"` 时将会返回 `"sunday"`, 若未定义 `values` 则返回数字 `0`。
+以上示例中，`get` 函数在选中 `"_SUNDAY"` 时将会返回 `"sunday"`, 若未定义
+`values` 则返回数字 `0`。
 
 #### menu
 
@@ -249,14 +226,12 @@ const animate = {
 
 ```json
 {
-    "icon": [
-        "rectangle.3.offgrid.fill"
-    ],
-    "title": "RIGHT",
-    "type": "menu",
-    "key": "right",
-    "items": "this.method.getMenu",
-    "value": 0
+  "icon": ["rectangle.3.offgrid.fill"],
+  "title": "RIGHT",
+  "type": "menu",
+  "key": "right",
+  "items": "this.method.getMenu",
+  "value": 0
 }
 ```
 
@@ -270,14 +245,11 @@ const animate = {
 
 ```json
 {
-    "icon": [
-        "wand.and.rays",
-        "orange"
-    ],
-    "title": "COLOR_TONE",
-    "type": "color",
-    "key": "calendar.colorTone",
-    "value": "orange"
+  "icon": ["wand.and.rays", "orange"],
+  "title": "COLOR_TONE",
+  "type": "color",
+  "key": "calendar.colorTone",
+  "value": "orange"
 }
 ```
 
@@ -285,15 +257,12 @@ const animate = {
 
 ```json
 {
-    "icon": [
-        "calendar",
-        "#99CC33"
-    ],
-    "title": "CHOOSE_DATE",
-    "type": "date",
-    "key": "date",
-    "mode": 1,
-    "value": 0
+  "icon": ["calendar", "#99CC33"],
+  "title": "CHOOSE_DATE",
+  "type": "date",
+  "key": "date",
+  "mode": 1,
+  "value": 0
 }
 ```
 
@@ -303,15 +272,12 @@ const animate = {
 
 ```json
 {
-    "icon": [
-        "pencil.and.ellipsis.rectangle",
-        "#A569BD"
-    ],
-    "title": "TITLE",
-    "type": "input",
-    "secure": false,
-    "key": "title",
-    "value": "Title"
+  "icon": ["pencil.and.ellipsis.rectangle", "#A569BD"],
+  "title": "TITLE",
+  "type": "input",
+  "secure": false,
+  "key": "title",
+  "value": "Title"
 }
 ```
 
@@ -319,41 +285,38 @@ const animate = {
 
 ```json
 {
-    "icon": [
-        "rectangle.3.offgrid.fill"
-    ],
-    "title": "ICON",
-    "type": "icon",
-    "key": "icon",
-    "value": "plus"
+  "icon": ["rectangle.3.offgrid.fill"],
+  "title": "ICON",
+  "type": "icon",
+  "key": "icon",
+  "value": "plus"
 }
 ```
 
 #### push
 
-如果 `view` 以 `this.method` 开头且结尾无括号，则会执函数获取子视图，和 `script` 一样需要向 `setting.method` 写入方法。
+如果 `view` 以 `this.method` 开头且结尾无括号，则会执函数获取子视图，和 `script`
+一样需要向 `setting.method` 写入方法。
 
 ```js
 setting.method.readme = animate => {
-    return {
-        type: "view",
-        props: {},
-        layout: $layout.fill
-    }
+  return {
+    type: "view",
+    props: {},
+    layout: $layout.fill
+  }
 }
 ```
 
 ```json
 {
-    "icon": [
-        "rectangle.3.offgrid.fill"
-    ],
-    "title": "CHILD",
-    "type": "push",
-    "key": "my.push",
-    "value": "data.save.in.my.push",
-    "navButtons": "this.method.getMyNavButtons",
-    "view": "this.method.getMyView"
+  "icon": ["rectangle.3.offgrid.fill"],
+  "title": "CHILD",
+  "type": "push",
+  "key": "my.push",
+  "value": "data.save.in.my.push",
+  "navButtons": "this.method.getMyNavButtons",
+  "view": "this.method.getMyView"
 }
 ```
 
@@ -361,21 +324,19 @@ setting.method.readme = animate => {
 
 ```json
 {
-    "icon": [
-        "rectangle.3.offgrid.fill"
-    ],
-    "title": "CHILD",
-    "type": "child",
-    "children": [
-        {
-            "title": "Section 1",
-            "items": []
-        },
-        {
-            "title": "Section 2",
-            "items": []
-        }
-    ]
+  "icon": ["rectangle.3.offgrid.fill"],
+  "title": "CHILD",
+  "type": "child",
+  "children": [
+    {
+      "title": "Section 1",
+      "items": []
+    },
+    {
+      "title": "Section 2",
+      "items": []
+    }
+  ]
 }
 ```
 
@@ -385,12 +346,10 @@ setting.method.readme = animate => {
 
 ```json
 {
-    "icon": [
-        "photo"
-    ],
-    "title": "IMAGE",
-    "type": "image",
-    "key": "image"
+  "icon": ["photo"],
+  "title": "IMAGE",
+  "type": "image",
+  "key": "image"
 }
 ```
 
@@ -400,27 +359,26 @@ setting.method.readme = animate => {
 const { Setting } = require("./easy-jsbox")
 const setting = new Setting()
 setting
-    .setSavePath("/storage/setting.json")
-    .setStructure([
+  .setSavePath("/storage/setting.json")
+  .setStructure([
+    {
+      title: "My setting",
+      items: [
         {
-            "title": "My setting",
-            "items": [
-                {
-                    "icon": [
-                        "house",
-                        "white"
-                    ],
-                    "title": "Hello",
-                    "type": "string",
-                    "key": "hello",
-                    "value": ""
-                }
-            ]
+          icon: ["house", "white"],
+          title: "Hello",
+          type: "string",
+          key: "hello",
+          value: ""
         }
-    ])
-    .loadConfig()
+      ]
+    }
+  ])
+  .loadConfig()
 setting.set("hello", "world") // 不建议使用
 console.log(setting.get("hello"))
 ```
 
-当调用 `setting.loadConfig()` 后将会从 `this.structure` 初始化数据，此时便可正常使用 `get(key, _default = null)`、`set(key, value)` 方法进行数据读写。
+当调用 `setting.loadConfig()` 后将会从 `this.structure`
+初始化数据，此时便可正常使用 `get(key, _default = null)`、`set(key, value)`
+方法进行数据读写。

@@ -5,10 +5,10 @@
  * @param {import("./app-main").AppKernel} kernel
  */
 module.exports = kernel => {
-    const version = $cache.get("compatibility.version") ?? 0
+  const version = $cache.get("compatibility.version") ?? 0
 
-    if (version < 1) {
-        kernel.logger.info("Running compatibility migration: ver1")
-        $cache.set("compatibility.version", 1)
-    }
+  if (version < 1) {
+    kernel.logger.info("Running compatibility migration: ver1")
+    $cache.set("compatibility.version", 1)
+  }
 }

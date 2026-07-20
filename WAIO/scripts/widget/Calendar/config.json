@@ -1,7 +1,4 @@
 {
-    "describe": "日历小组件",
-    "icon": [
-        "@/icon.png",
-        "@/icon-dark.png"
-    ]
+  "describe": "日历小组件",
+  "icon": ["@/icon.png", "@/icon-dark.png"]
 }

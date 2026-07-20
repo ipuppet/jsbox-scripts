@@ -1,16 +1,17 @@
 {
-    "info": {
-        "name": "BoxJsHelper",
-        "version": "1.4.10",
-        "author": "ipuppet",
-        "module": false
-    },
-    "settings": {
-        "theme": "auto",
-        "minSDKVer": "2.0.0",
-        "minOSVer": "13.0.0",
-        "idleTimerDisabled": false,
-        "keyboardToolbarEnabled": true,
-        "rotateDisabled": false
-    }
+  "info": {
+    "name": "BoxJsHelper",
+    "version": "1.4.10",
+    "author": "ipuppet",
+    "website": "https://blog.samuelwei.dev",
+    "module": false
+  },
+  "settings": {
+    "theme": "auto",
+    "minSDKVer": "2.0.0",
+    "minOSVer": "13.0.0",
+    "idleTimerDisabled": false,
+    "keyboardToolbarEnabled": true,
+    "rotateDisabled": false
+  }
 }

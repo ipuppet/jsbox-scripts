@@ -15,7 +15,11 @@ function buildContactQueryPage(kernel) {
   return createPage({
     views: [
       createCard([
-        createField({ id: "contactPhone", placeholder: $l10n("PHONE_NUMBER_OPTIONAL"), kbType: $kbType.phone }),
+        createField({
+          id: "contactPhone",
+          placeholder: $l10n("PHONE_NUMBER_OPTIONAL"),
+          kbType: $kbType.phone
+        }),
         createField({ id: "contactName", placeholder: $l10n("NAME_OPTIONAL") })
       ]),
       createPrimaryButton({
@@ -40,7 +44,11 @@ function buildContactAddPage(kernel) {
   return createPage({
     views: [
       createCard([
-        createField({ id: "addPhone", placeholder: $l10n("PHONE_NUMBERS_HINT"), kbType: $kbType.phone }),
+        createField({
+          id: "addPhone",
+          placeholder: $l10n("PHONE_NUMBERS_HINT"),
+          kbType: $kbType.phone
+        }),
         createField({ id: "addName", placeholder: $l10n("NAME_OPTIONAL") })
       ]),
       createPrimaryButton({

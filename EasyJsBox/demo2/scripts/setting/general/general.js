@@ -5,7 +5,7 @@ const appearance = require("./appearance")
  * @param {AppKernel} kernel
  */
 module.exports = kernel => {
-    return {
-        items: [appearance]
-    }
+  return {
+    items: [appearance]
+  }
 }

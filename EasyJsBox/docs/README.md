@@ -9,22 +9,24 @@
 const { Kernel } = require("./easy-jsbox")
 
 class AppKernel extends Kernel {
-    constructor() {
-        super()
-        this.query = $context.query
-    }
+  constructor() {
+    super()
+    this.query = $context.query
+  }
 }
 
 const kernel = new AppKernel()
 kernel.useJsboxNav()
 kernel.UIRender({
-    views: [{
-        type: "label",
-        props: {
-            text: "Hello World!"
-        },
-        layout: $layout.fill
-    }]
+  views: [
+    {
+      type: "label",
+      props: {
+        text: "Hello World!"
+      },
+      layout: $layout.fill
+    }
+  ]
 })
 ```
 

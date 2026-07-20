@@ -3,8 +3,7 @@
     "name": "SMSForwarder",
     "version": "1.0.0",
     "author": "ipuppet",
-    "url": "",
-    "website": "",
+    "website": "https://blog.samuelwei.dev",
     "module": false
   },
   "settings": {

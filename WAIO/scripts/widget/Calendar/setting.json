@@ -1,152 +1,152 @@
 [
-    {
-        "title": "GENERAL",
-        "items": [
-            {
-                "type": "child",
-                "title": "DISPLAY_MODE",
-                "children": [
-                    {
-                        "title": "GENERAL",
-                        "items": [
-                            {
-                                "icon": ["flag.fill", "#FFCC00"],
-                                "title": "FIRST_DAY_OF_WEEK",
-                                "type": "tab",
-                                "key": "firstDayOfWeek",
-                                "items": ["_SUNDAY", "_MONDAY"],
-                                "value": 0
-                            },
-                            {
-                                "icon": ["calendar", "#FFCC00"],
-                                "title": "ONLY_CURRENT_MONTH",
-                                "type": "switch",
-                                "key": "onlyCurrentMonth",
-                                "value": false
-                            }
-                        ]
-                    },
-                    {
-                        "title": "TITLE",
-                        "items": [
-                            {
-                                "icon": ["wand.and.rays", "#0099CC"],
-                                "title": "YEAR_DISPLAY_MODE",
-                                "type": "tab",
-                                "key": "title.year.mode",
-                                "items": ["NONE", "YEAR_DISPLAY_MODE_HALF", "YEAR_DISPLAY_MODE_FULLY"],
-                                "value": 1
-                            },
-                            {
-                                "icon": ["wand.and.rays", "#0099CC"],
-                                "title": "MONTH_DISPLAY_MODE",
-                                "type": "tab",
-                                "key": "monthDisplayMode",
-                                "items": ["CHINESE_CHARACTERS", "NUMBER"],
-                                "value": 1
-                            },
-                            {
-                                "icon": ["rectangle.and.paperclip", "#CCCC00"],
-                                "title": "SHOW_LUNAR",
-                                "type": "switch",
-                                "key": "title.lunar",
-                                "value": true
-                            },
-                            {
-                                "icon": ["rectangle.and.paperclip", "#FFCC00"],
-                                "title": "SHOW_LUNAR_YEAR",
-                                "type": "switch",
-                                "key": "title.lunarYear",
-                                "value": true
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
+  {
+    "title": "GENERAL",
+    "items": [
+      {
+        "type": "child",
+        "title": "DISPLAY_MODE",
+        "children": [
+          {
+            "title": "GENERAL",
+            "items": [
+              {
+                "icon": ["flag.fill", "#FFCC00"],
+                "title": "FIRST_DAY_OF_WEEK",
+                "type": "tab",
+                "key": "firstDayOfWeek",
+                "items": ["_SUNDAY", "_MONDAY"],
+                "value": 0
+              },
+              {
+                "icon": ["calendar", "#FFCC00"],
+                "title": "ONLY_CURRENT_MONTH",
+                "type": "switch",
+                "key": "onlyCurrentMonth",
+                "value": false
+              }
+            ]
+          },
+          {
+            "title": "TITLE",
+            "items": [
+              {
+                "icon": ["wand.and.rays", "#0099CC"],
+                "title": "YEAR_DISPLAY_MODE",
+                "type": "tab",
+                "key": "title.year.mode",
+                "items": ["NONE", "YEAR_DISPLAY_MODE_HALF", "YEAR_DISPLAY_MODE_FULLY"],
+                "value": 1
+              },
+              {
+                "icon": ["wand.and.rays", "#0099CC"],
+                "title": "MONTH_DISPLAY_MODE",
+                "type": "tab",
+                "key": "monthDisplayMode",
+                "items": ["CHINESE_CHARACTERS", "NUMBER"],
+                "value": 1
+              },
+              {
+                "icon": ["rectangle.and.paperclip", "#CCCC00"],
+                "title": "SHOW_LUNAR",
+                "type": "switch",
+                "key": "title.lunar",
+                "value": true
+              },
+              {
+                "icon": ["rectangle.and.paperclip", "#FFCC00"],
+                "title": "SHOW_LUNAR_YEAR",
+                "type": "switch",
+                "key": "title.lunarYear",
+                "value": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "icon": ["photo"],
+        "type": "child",
+        "title": "HOLIDAY",
+        "children": [
+          {
+            "title": "HOLIDAY",
+            "items": [
+              {
                 "icon": ["photo"],
-                "type": "child",
                 "title": "HOLIDAY",
-                "children": [
-                    {
-                        "title": "HOLIDAY",
-                        "items": [
-                            {
-                                "icon": ["photo"],
-                                "title": "HOLIDAY",
-                                "type": "switch",
-                                "key": "holiday",
-                                "value": true
-                            }
-                        ]
-                    },
-                    {
-                        "title": "COLOR",
-                        "items": [
-                            {
-                                "icon": ["wand.and.rays", "#0099CC"],
-                                "title": "HOLIDAT_COLOR",
-                                "type": "color",
-                                "key": "holidayColor",
-                                "value": "#0099CC"
-                            },
-                            {
-                                "icon": ["wand.and.rays", "#FF6600"],
-                                "title": "HOLIDAT_REST_NO_COLOR",
-                                "type": "color",
-                                "key": "holidayNoRestColor",
-                                "value": "red"
-                            }
-                        ]
-                    },
-                    {
-                        "title": "ADVANCED",
-                        "items": [
-                            {
-                                "icon": ["cloud.fill", "#996699"],
-                                "title": "GET_HOLIDAY",
-                                "type": "script",
-                                "value": "this.method.getHoliday"
-                            },
-                            {
-                                "icon": ["trash.fill", "#FF6666"],
-                                "title": "CLEAR_HOLIDAY_DATA",
-                                "type": "script",
-                                "value": "this.method.clearHoliday"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "title": "BACKGROUND_AND_COLOR",
-        "items": [
-            {
-                "icon": ["photo", "#0099CC"],
-                "title": "BACKGROUND_IMAGE",
-                "type": "script",
-                "value": "this.method.backgroundImage"
-            },
-            {
-                "icon": ["wand.and.rays", "orange"],
-                "title": "COLOR_TONE",
+                "type": "switch",
+                "key": "holiday",
+                "value": true
+              }
+            ]
+          },
+          {
+            "title": "COLOR",
+            "items": [
+              {
+                "icon": ["wand.and.rays", "#0099CC"],
+                "title": "HOLIDAT_COLOR",
                 "type": "color",
-                "key": "colorTone",
-                "value": "orange"
-            }
-        ]
-    },
-    {
-        "title": "ABOUT",
-        "items": [
-            {
-                "icon": ["book.fill", "#A569BD"],
-                "title": "README",
+                "key": "holidayColor",
+                "value": "#0099CC"
+              },
+              {
+                "icon": ["wand.and.rays", "#FF6600"],
+                "title": "HOLIDAT_REST_NO_COLOR",
+                "type": "color",
+                "key": "holidayNoRestColor",
+                "value": "red"
+              }
+            ]
+          },
+          {
+            "title": "ADVANCED",
+            "items": [
+              {
+                "icon": ["cloud.fill", "#996699"],
+                "title": "GET_HOLIDAY",
                 "type": "script",
-                "value": "this.method.readme"
-            }
+                "value": "this.method.getHoliday"
+              },
+              {
+                "icon": ["trash.fill", "#FF6666"],
+                "title": "CLEAR_HOLIDAY_DATA",
+                "type": "script",
+                "value": "this.method.clearHoliday"
+              }
+            ]
+          }
         ]
-    }
+      }
+    ]
+  },
+  {
+    "title": "BACKGROUND_AND_COLOR",
+    "items": [
+      {
+        "icon": ["photo", "#0099CC"],
+        "title": "BACKGROUND_IMAGE",
+        "type": "script",
+        "value": "this.method.backgroundImage"
+      },
+      {
+        "icon": ["wand.and.rays", "orange"],
+        "title": "COLOR_TONE",
+        "type": "color",
+        "key": "colorTone",
+        "value": "orange"
+      }
+    ]
+  },
+  {
+    "title": "ABOUT",
+    "items": [
+      {
+        "icon": ["book.fill", "#A569BD"],
+        "title": "README",
+        "type": "script",
+        "value": "this.method.readme"
+      }
+    ]
+  }
 ]

@@ -1,234 +1,176 @@
 [
-    {
-        "title": "GENERAL",
-        "items": [
-            {
-                "icon": [
-                    "photo"
-                ],
-                "title": "BACKGROUND_IMAGE",
-                "type": "script",
-                "value": "this.method.backgroundImage"
-            },
-            {
-                "icon": [
-                    "archivebox",
-                    "#336699"
-                ],
-                "title": "USE_COMPRESSED_IMAGE",
+  {
+    "title": "GENERAL",
+    "items": [
+      {
+        "icon": ["photo"],
+        "title": "BACKGROUND_IMAGE",
+        "type": "script",
+        "value": "this.method.backgroundImage"
+      },
+      {
+        "icon": ["archivebox", "#336699"],
+        "title": "USE_COMPRESSED_IMAGE",
+        "type": "switch",
+        "key": "compressImage",
+        "value": true
+      },
+      {
+        "type": "child",
+        "title": "DISPLAY_MODE",
+        "children": [
+          {
+            "title": "GENERAL",
+            "items": [
+              {
+                "icon": ["slider.horizontal.3", "#FF9933"],
+                "title": "DATE_FONT_SIZE",
+                "type": "number",
+                "key": "dateFontSize",
+                "value": 40
+              },
+              {
+                "icon": ["minus.square.fill", "#0099CC"],
+                "title": "SHOW_MINUS",
                 "type": "switch",
-                "key": "compressImage",
-                "value": true
-            },
-            {
-                "type": "child",
+                "key": "showMinus",
+                "value": false
+              },
+              {
                 "title": "DISPLAY_MODE",
-                "children": [
-                    {
-                        "title": "GENERAL",
-                        "items": [
-                            {
-                                "icon": [
-                                    "slider.horizontal.3",
-                                    "#FF9933"
-                                ],
-                                "title": "DATE_FONT_SIZE",
-                                "type": "number",
-                                "key": "dateFontSize",
-                                "value": 40
-                            },
-                            {
-                                "icon": [
-                                    "minus.square.fill",
-                                    "#0099CC"
-                                ],
-                                "title": "SHOW_MINUS",
-                                "type": "switch",
-                                "key": "showMinus",
-                                "value": false
-                            },
-                            {
-                                "title": "DISPLAY_MODE",
-                                "type": "tab",
-                                "key": "displayMode",
-                                "items": [
-                                    "DISPLAY_MODE_DAY",
-                                    "DISPLAY_MODE_WEEK"
-                                ],
-                                "value": 0
-                            }
-                        ]
-                    },
-                    {
-                        "title": "DISPLAY_MODE_WEEK",
-                        "items": [
-                            {
-                                "title": "Style",
-                                "type": "menu",
-                                "pullDown": true,
-                                "key": "week.displayStyle",
-                                "value": 0,
-                                "items": [
-                                    "X_WEEK_X_DAY",
-                                    "WEEK_ONLY",
-                                    "FLOATING_POINT",
-                                    "FLOATING_POINT_WITH_UNIT"
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "icon": [
-                    "wand.and.rays",
-                    "#FF0033"
-                ],
-                "type": "child",
-                "title": "COLOR_SETTING",
-                "children": [
-                    {
-                        "title": "LIGHT_MODE",
-                        "items": [
-                            {
-                                "icon": [
-                                    "wand.and.rays",
-                                    "#FF0033"
-                                ],
-                                "title": "OVERDUE_COLOR",
-                                "type": "color",
-                                "key": "overdueColor",
-                                "value": "#FF0033"
-                            },
-                            {
-                                "icon": [
-                                    "wand.and.rays",
-                                    "#0099CC"
-                                ],
-                                "title": "DATE_COLOR",
-                                "type": "color",
-                                "key": "dateColor",
-                                "value": "#0099CC"
-                            },
-                            {
-                                "icon": [
-                                    "wand.and.rays",
-                                    "#339933"
-                                ],
-                                "title": "INFO_COLOR",
-                                "type": "color",
-                                "key": "infoColor",
-                                "value": "#CCCCCC"
-                            },
-                            {
-                                "icon": [
-                                    "wand.and.rays",
-                                    "#FF9933"
-                                ],
-                                "title": "BACKGROUND_COLOR",
-                                "type": "color",
-                                "key": "backgroundColor",
-                                "value": "#FF9933"
-                            }
-                        ]
-                    },
-                    {
-                        "title": "DARK_MODE",
-                        "items": [
-                            {
-                                "icon": [
-                                    "wand.and.rays",
-                                    "#FF0033"
-                                ],
-                                "title": "OVERDUE_COLOR",
-                                "type": "color",
-                                "key": "overdueColorDark",
-                                "value": "#FF0033"
-                            },
-                            {
-                                "icon": [
-                                    "wand.and.rays",
-                                    "#0099CC"
-                                ],
-                                "title": "DATE_COLOR",
-                                "type": "color",
-                                "key": "dateColorDark",
-                                "value": "#0099CC"
-                            },
-                            {
-                                "icon": [
-                                    "wand.and.rays",
-                                    "#339933"
-                                ],
-                                "title": "INFO_COLOR",
-                                "type": "color",
-                                "key": "infoColorDark",
-                                "value": "#CCCCCC"
-                            },
-                            {
-                                "icon": [
-                                    "wand.and.rays",
-                                    "#FF9933"
-                                ],
-                                "title": "BACKGROUND_COLOR",
-                                "type": "color",
-                                "key": "backgroundColorDark",
-                                "value": "#333333"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "title": "MYDAYS",
-        "items": [
-            {
-                "icon": [
-                    "pencil.and.ellipsis.rectangle",
-                    "#A569BD"
-                ],
-                "title": "TITLE",
-                "type": "input",
-                "key": "title",
-                "value": "Title"
-            },
-            {
-                "icon": [
-                    "pencil.and.outline",
-                    "#FF6666"
-                ],
-                "title": "DESCRIBE",
-                "type": "string",
-                "key": "describe",
-                "value": "Description"
-            },
-            {
-                "icon": [
-                    "calendar",
-                    "#99CC33"
-                ],
-                "title": "CHOOSE_DATE",
-                "type": "date",
-                "key": "date",
-                "mode": 1,
+                "type": "tab",
+                "key": "displayMode",
+                "items": ["DISPLAY_MODE_DAY", "DISPLAY_MODE_WEEK"],
                 "value": 0
-            }
+              }
+            ]
+          },
+          {
+            "title": "DISPLAY_MODE_WEEK",
+            "items": [
+              {
+                "title": "Style",
+                "type": "menu",
+                "pullDown": true,
+                "key": "week.displayStyle",
+                "value": 0,
+                "items": ["X_WEEK_X_DAY", "WEEK_ONLY", "FLOATING_POINT", "FLOATING_POINT_WITH_UNIT"]
+              }
+            ]
+          }
         ]
-    },
-    {
-        "title": "ABOUT",
-        "items": [
-            {
-                "icon": [
-                    "book.fill",
-                    "#A569BD"
-                ],
-                "title": "README",
-                "type": "script",
-                "value": "this.method.readme"
-            }
+      },
+      {
+        "icon": ["wand.and.rays", "#FF0033"],
+        "type": "child",
+        "title": "COLOR_SETTING",
+        "children": [
+          {
+            "title": "LIGHT_MODE",
+            "items": [
+              {
+                "icon": ["wand.and.rays", "#FF0033"],
+                "title": "OVERDUE_COLOR",
+                "type": "color",
+                "key": "overdueColor",
+                "value": "#FF0033"
+              },
+              {
+                "icon": ["wand.and.rays", "#0099CC"],
+                "title": "DATE_COLOR",
+                "type": "color",
+                "key": "dateColor",
+                "value": "#0099CC"
+              },
+              {
+                "icon": ["wand.and.rays", "#339933"],
+                "title": "INFO_COLOR",
+                "type": "color",
+                "key": "infoColor",
+                "value": "#CCCCCC"
+              },
+              {
+                "icon": ["wand.and.rays", "#FF9933"],
+                "title": "BACKGROUND_COLOR",
+                "type": "color",
+                "key": "backgroundColor",
+                "value": "#FF9933"
+              }
+            ]
+          },
+          {
+            "title": "DARK_MODE",
+            "items": [
+              {
+                "icon": ["wand.and.rays", "#FF0033"],
+                "title": "OVERDUE_COLOR",
+                "type": "color",
+                "key": "overdueColorDark",
+                "value": "#FF0033"
+              },
+              {
+                "icon": ["wand.and.rays", "#0099CC"],
+                "title": "DATE_COLOR",
+                "type": "color",
+                "key": "dateColorDark",
+                "value": "#0099CC"
+              },
+              {
+                "icon": ["wand.and.rays", "#339933"],
+                "title": "INFO_COLOR",
+                "type": "color",
+                "key": "infoColorDark",
+                "value": "#CCCCCC"
+              },
+              {
+                "icon": ["wand.and.rays", "#FF9933"],
+                "title": "BACKGROUND_COLOR",
+                "type": "color",
+                "key": "backgroundColorDark",
+                "value": "#333333"
+              }
+            ]
+          }
         ]
-    }
+      }
+    ]
+  },
+  {
+    "title": "MYDAYS",
+    "items": [
+      {
+        "icon": ["pencil.and.ellipsis.rectangle", "#A569BD"],
+        "title": "TITLE",
+        "type": "input",
+        "key": "title",
+        "value": "Title"
+      },
+      {
+        "icon": ["pencil.and.outline", "#FF6666"],
+        "title": "DESCRIBE",
+        "type": "string",
+        "key": "describe",
+        "value": "Description"
+      },
+      {
+        "icon": ["calendar", "#99CC33"],
+        "title": "CHOOSE_DATE",
+        "type": "date",
+        "key": "date",
+        "mode": 1,
+        "value": 0
+      }
+    ]
+  },
+  {
+    "title": "ABOUT",
+    "items": [
+      {
+        "icon": ["book.fill", "#A569BD"],
+        "title": "README",
+        "type": "script",
+        "value": "this.method.readme"
+      }
+    ]
+  }
 ]

@@ -6,12 +6,12 @@
  * 该数据结构可查看如下链接 http://boxjs.net/query/boxdata
  */
 function main(boxdata) {
-    $ui.alert({
-        title: "Hi",
-        message: boxdata.sysapps[0].author
-    })
+  $ui.alert({
+    title: "Hi",
+    message: boxdata.sysapps[0].author
+  })
 }
 
 module.exports = {
-    main: main
+  main: main
 }
