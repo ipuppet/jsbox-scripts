@@ -1,0 +1,134 @@
+name: Auto Build JSBox Packages
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - "EasyJsBox/**"
+      - "dist/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  detect-dirs:
+    runs-on: ubuntu-latest
+    outputs:
+      has_dirs: ${{ steps.target_dirs.outputs.has_dirs }}
+      dirs_json: ${{ steps.target_dirs.outputs.dirs_json }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Resolve target directories
+        id: target_dirs
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            dirs="$(find . -mindepth 1 -maxdepth 1 -type d \
+              ! -name '.git' \
+              ! -name '.github' \
+              ! -name 'EasyJsBox' \
+              ! -name 'dist' \
+              -printf '%f\n' | sort)"
+          else
+            before_sha="${{ github.event.before }}"
+            after_sha="${{ github.sha }}"
+
+            if [[ "$before_sha" == "0000000000000000000000000000000000000000" ]]; then
+              changed_files="$(git ls-tree -r --name-only "$after_sha")"
+            else
+              changed_files="$(git diff --name-only "$before_sha" "$after_sha")"
+            fi
+
+            dirs="$(echo "$changed_files" \
+              | awk -F/ 'NF > 1 {print $1}' \
+              | grep -Ev '^(EasyJsBox|dist|\.github)$' \
+              | sort -u || true)"
+          fi
+
+          if [[ -z "$dirs" ]]; then
+            echo "has_dirs=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          echo "has_dirs=true" >> "$GITHUB_OUTPUT"
+          json_dirs="$(printf '%s\n' "$dirs" | jq -R -s -c 'split("\n") | map(select(length>0))')"
+          echo "dirs_json=$json_dirs" >> "$GITHUB_OUTPUT"
+
+  build-per-dir:
+    runs-on: ubuntu-latest
+    needs: detect-dirs
+    if: needs.detect-dirs.outputs.has_dirs == 'true'
+    strategy:
+      fail-fast: false
+      matrix:
+        dir: ${{ fromJson(needs.detect-dirs.outputs.dirs_json) }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build .box artifact
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p out
+
+          dir="${{ matrix.dir }}"
+          zip_file="out/${dir}.zip"
+          box_file="out/${dir}.box"
+
+          rm -f "$zip_file" "$box_file"
+          zip -r "$zip_file" "$dir" -x "*/.git/*" "*/node_modules/*"
+          mv "$zip_file" "$box_file"
+
+      - name: Upload .box artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: box-${{ matrix.dir }}
+          path: out/${{ matrix.dir }}.box
+          if-no-files-found: error
+          retention-days: 1
+
+  publish-artifacts:
+    runs-on: ubuntu-latest
+    needs:
+      - detect-dirs
+      - build-per-dir
+    if: needs.detect-dirs.outputs.has_dirs == 'true'
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Download built artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: box-*
+          merge-multiple: true
+          path: dist
+
+      - name: Commit generated artifacts
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- dist; then
+            echo "No artifact changes."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist/*.box
+          git commit -m "chore: update jsbox .box artifacts [skip ci]"
+          git push
